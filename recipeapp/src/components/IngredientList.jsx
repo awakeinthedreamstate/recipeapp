@@ -6,9 +6,7 @@ export default function IngredientList({ recipe, isLoading }) {
       {isLoading ? (
         <p>Loading...</p>
       ) : (
-        recipe.extendedIngredients.map((item) => (
-          <Ingredient key={item.id} item={item} />
-        ))
+        recipe.extendedIngredients.map((item) => <Ingredient item={item} />)
       )}
     </div>
   );
